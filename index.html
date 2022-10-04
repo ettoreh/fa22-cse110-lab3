@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Pomodoro Timer First Brainstorm </title>
+  </head>
+  <body>
+    <div class="main-container">
+        <h1> Pomodoro Timer First Brainstorm </h1>
+        <h2> Meeting Minutes </h2>
+        <h4> October 4, 2022 </h4>
+    </div><br>
+
+    <div class="attendance-container"> 
+        <h3> Attendance </h3>
+        <ol>  
+            <label><input type="checkbox" checked>: E. Hidoux</label><br>
+            <label><input type="checkbox" checked>: A. Smith</label><br> 
+            <label><input type="checkbox" >: J. Tompson</label><br>
+            <label><input type="checkbox" checked>: M. Mc Douglas</label><br>
+            <label><input type="checkbox" >: P. Toledo</label>  
+        </ol>
+    </div><br>
+
+    <div class="brainstorming-container"> 
+        <h3> Brainstorming </h3>
+        <h4> Agenda </h4>
+        <ol>    
+            <li> Determine the software use to program the timer. </li>
+            <li> Plan the work to do for the next week. </li>
+            <li> Create the workspace. </li>
+        </ol>
+
+        <h4> Unfinished Business </h4>
+        <ol>    
+            <li> Determine the time duration of the pomodoro timer. </li>
+            <li> Choose one design among those we have and three colors. </li>
+        </ol>
+
+        <h4> New Business </h4>
+        <ol>    
+            <li> Depending of the context, choose a material for it. </li>
+            <li> Discuss about the use of remote work. </li>
+            <li> Estimate the new possible release date. </li>
+        </ol>
+
+        <label for="start">Possible release date:</label>
+
+        <input type="date" id="start" name="trip-start"
+        value="2023-04-01"
+        min="2023-01-01" max="2023-12-31">
+    </div><br>
+
+    <div class="check-in-container"> 
+        <h3> Check-ins </h3>
+        <h4> Pictures </h4>
+        <img src="data/Pomodoro-Technique-Chart.jpg" alt="'pomodoro chart" width="500">
+
+        <h4> Questions </h4>
+        <p> Do you prefer to do the next meeting <strong>Tuesday at 4pm</strong> or <b>Wednesday at 11am</b> ?</p>
+        <input type="radio" name="date" id="tuesday"> 
+        <label for="tuesday">Tuesday</label>
+    
+        <input type="radio" name="date" id="wednesday"> 
+        <label for="wednesday">Wednesday</label>
+        <br><br>
+
+        <p><i>If you have another question, please ask it below.</i></p>
+        <textarea rows="4" cols="30"> Ask your question here </textarea>
+    </div><br>
+
+    <div class="documentation-container"> 
+        <h3> Documentation </h3>
+        <h4> Video </h4>
+        <p>Explanation of the pomodoro technique.</p>
+        <video width="320" controls>
+            <source src="data/Pomodoro_Technique_Video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+        <h4> Audio </h4>
+        <p>Explanation of the pomodoro technique.</p>
+        <audio width="320" controls>
+            <source src="data/Pomodoro_Technique_Audio.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+        </video>
+    </div><br>
+
+  </body>
+</html>
