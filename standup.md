@@ -5,9 +5,9 @@ date: ... <br>
 member name: ... <br>
 sprint number: ... <br>
 sprint purpose: ... <br>
----
-<br>
-<br>
+
+<br><br>
+
 1. What did I work on yesterday?
 - ...
 - ...
@@ -28,5 +28,3 @@ answer: ... <br>
 
 - ... <br>
 answer: ... <br>
-<br>
----
