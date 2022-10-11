@@ -1,0 +1,12 @@
+body {
+    background-color: lightblue;
+  }
+  
+h1 {
+    color: hsla(240, 100%, 25%, 50%);
+    margin-left: 20px;
+  }
+
+p {
+    color: rgb(255, 119, 0)
+}
