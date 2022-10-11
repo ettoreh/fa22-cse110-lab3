@@ -38,6 +38,17 @@ p {
     height: 2.5in;
 }
 
+#content {
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-style: groove;
+    border-color: azure;
+    border-width: 5px;
+    border-radius: 3%;
+}
 
 * {
     font-display: 0;
