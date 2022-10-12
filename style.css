@@ -60,7 +60,6 @@ p {
     border-style: groove;
     border-color: azure;
     border-width: 5px;
-    border-radius: 3%;
     display: block;
 }
 
@@ -87,4 +86,52 @@ h3:hover {
 
 h3:active {
   background-color: black;
+}
+
+.attendance-container {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.brainstorming-container {
+  display: grid;
+  margin: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-style: groove;
+  border-color: azure;
+  border-width: 5px;
+  grid-template-columns: auto auto auto ;
+  gap: 20px;
+  padding: 10px;
+}
+
+.brainstorming-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-width: 5px;
+  text-align: center;
+  padding: 20px 20px;
+  font-size: 30px;
+  display: block;
+}
+
+.b_title {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.agenda {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.release {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 3;
+  grid-column-end: 4;
 }

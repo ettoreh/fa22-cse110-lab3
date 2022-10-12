@@ -11,8 +11,8 @@
         <h4 id="title" class="date"> October 4, 2022 </h4>
     </div><br>
 
+    <h3> Attendance </h3>
     <div class="attendance-container"> 
-        <h3> Attendance </h3>
         <label class="attendance">
             <input type="checkbox" checked> E. Hidoux 
         </label><br>
@@ -30,33 +30,45 @@
         </label>  
     </div><br>
 
-    <div class="brainstorming-container", id="content"> 
-        <h3> Brainstorming </h3>
-        <h4> Agenda </h4>
-        <ol>    
-            <li> Determine the software use to program the timer. </li>
-            <li> Plan the work to do for the next week. </li>
-            <li> Create the workspace. </li>
-        </ol>
+    <div class="brainstorming-container"> 
+        <div class="b_title" id="item">
+            <h3> Brainstorming </h3>
+        </div>
 
-        <h4> Unfinished Business </h4>
-        <ol>    
-            <li> Determine the time duration of the pomodoro timer. </li>
-            <li> Choose one design among those we have and three colors. </li>
-        </ol>
+        
+        <div class="agenda" id="item">
+            <h4> Agenda </h4>
+            <ol>    
+                <li> Determine the software use to program the timer. </li>
+                <li> Plan the work to do for the next week. </li>
+                <li> Create the workspace. </li>
+            </ol>
+        </div>
 
-        <h4> New Business </h4>
-        <ol>    
-            <li> Depending of the context, choose a material for it. </li>
-            <li> Discuss about the use of remote work. </li>
-            <li> Estimate the new possible release date. </li>
-        </ol>
+        <div class="unfinished" id="item">
+            <h4> Unfinished Business </h4>
+            <ol>    
+                <li> Determine the time duration of the pomodoro timer. </li>
+                <li> Choose one design among those we have and three colors. </li>
+            </ol>
+        </div>
 
-        <label for="start">Possible release date:</label>
+        <div class="new" id="item">
+            <h4> New Business </h4>
+            <ol>    
+                <li> Depending of the context, choose a material for it. </li>
+                <li> Discuss about the use of remote work. </li>
+                <li> Estimate the new possible release date. </li>
+            </ol>
+        </div>
 
-        <input type="date" id="start" name="trip-start"
-        value="2023-04-01"
-        min="2023-01-01" max="2023-12-31">
+        <div class="release" id="item">
+            <h4><label for="start">Possible release date:</label>
+
+            <input type="date" id="start" name="trip-start"
+            value="2023-04-01"
+            min="2023-01-01" max="2023-12-31"></h4>
+        </div>
     </div><br>
 
     <div class="check-in-container", id="content"> 
