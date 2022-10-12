@@ -39,7 +39,6 @@ h3 {
   }
 
 p {
-    color: rgb(255, 119, 0);
     text-decoration: dotted;
 }
 
@@ -138,3 +137,28 @@ h3:active {
   grid-column-start: 3;
   grid-column-end: 4;
 }
+
+h2, h4 {
+  color: rgb(34, 24, 172);
+}
+
+ul li {
+  list-style-type: circle;
+}
+
+h4 ~ p {
+  color: rgb(52, 37, 193);
+}
+
+li:first-of-type {
+  color: rgb(152, 27, 8);
+}
+
+li:first-of-type + li {
+  color: rgb(152, 106, 8);
+}
+
+h4.date{
+  font-size: 20px;
+}
+
