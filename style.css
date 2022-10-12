@@ -80,3 +80,11 @@ img[alt|="pomodoro chart"] {
   max-height: 100%;
   max-width: 100%;
 }
+
+h3:hover {
+  color: rgb(43, 13, 193);
+}
+
+h3:active {
+  background-color: black;
+}
