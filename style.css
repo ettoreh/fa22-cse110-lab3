@@ -1,3 +1,8 @@
+@font-face {
+  font-family: myFontsName;
+  src: url("./Silkscreen-Regular.ttf");
+}
+
 body {
     background-color: lightblue;
     margin: 20px;
@@ -10,7 +15,8 @@ h1 {
   }
 
 h3 {
-  font-size: 4vh;
+  font-size: 5vh;
+  font-family: myFontsName;
 }
 
 .date {
