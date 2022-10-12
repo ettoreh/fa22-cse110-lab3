@@ -48,9 +48,13 @@ p {
     border-color: azure;
     border-width: 5px;
     border-radius: 3%;
+    display: block;
 }
 
 * {
     font-display: 0;
 }
 
+img[alt|="pomodoro chart"] {
+    width: 500px;
+}
