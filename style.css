@@ -1,13 +1,18 @@
+/* import a new font style*/
 @font-face {
-  font-family: myFontsName;
-  src: url("./Silkscreen-Regular.ttf");
+  /* choose new font style name */
+  font-family: myFontsName; 
+  /* link to the file of the font style */
+  src: url("./Silkscreen-Regular.ttf"); 
 }
 
+/* add responsiveness with condition on the screen display */
 @media (max-width: 1250px) and (orientation: landscape) {
+    /* modify the background color of every div if not condition */
     div {
         background-color: azure;
         display: block;
-    }/* … */
+    }
 }
 
 body {
@@ -23,6 +28,7 @@ h1 {
 
 h3 {
   font-size: 5vh;
+  /* use the new font style */
   font-family: myFontsName;
 }
 
@@ -30,8 +36,8 @@ h3 {
     font-size: 0.75em;
 }
 
+/* parameter the style of the main title */
 #title {
-
     top: 0.3in;
     font-style: oblique;
     font-family: 'Times New Roman';
@@ -68,27 +74,24 @@ p {
     font-display: 0;
 }
 
-img[alt|="pomodoro chart"] {
-    height: 500px;
-    width: 500px;
-    max-width: 60%;
-    min-width: 60%;
-}
-
+/* attribute selector */
 img[alt|="pomodoro chart"] {
   height: 500px;
   max-height: 100%;
   max-width: 100%;
 }
 
+/* when the mouse pass above the element */
 h3:hover {
   color: rgb(43, 13, 193);
 }
 
+/* when click on the element */
 h3:active {
   background-color: black;
 }
 
+/* display flex */
 .attendance-container {
   display: flex;
   flex-direction: column;
@@ -97,6 +100,7 @@ h3:active {
   position: static;
 }
 
+/* display grid with different parameter */
 .brainstorming-container {
   display: grid;
   margin: auto;
@@ -107,11 +111,14 @@ h3:active {
   border-style: groove;
   border-color: azure;
   border-width: 5px;
+  /* the number of 'auto' represente the number of columns (could have been a number) */
   grid-template-columns: auto auto auto ;
   gap: 20px;
   padding: 10px;
 }
 
+/* child combinator selector for div inside the element xith the class */
+/*  */
 .brainstorming-container > div {
   background-color: rgba(255, 255, 255, 0.8);
   border-width: 5px;
@@ -121,16 +128,19 @@ h3:active {
   display: block;
 }
 
+/* positioning the title in the grid */
 .b_title {
   grid-column-start: 1;
   grid-column-end: 4;
 }
 
+/* positioning the first main content in the grid */
 .agenda {
   grid-column-start: 1;
   grid-column-end: 2;
 }
 
+/* positioning the last content in the grid */
 .release {
   grid-row-start: 3;
   grid-row-end: 4;
@@ -138,26 +148,37 @@ h3:active {
   grid-column-end: 4;
 }
 
+/* list selector (both of them) */
 h2, h4 {
-  color: rgb(34, 24, 172);
+  color: rgb(110, 24, 172);
 }
 
+/* descendant combinator selector (only li under an ul) */
 ul li {
   list-style-type: circle;
 }
 
+/* general sibling combinator selector (only p that comes after a h4) */
 h4 ~ p {
-  color: rgb(52, 37, 193);
+  color: rgb(255, 255, 255);
 }
 
+/* first appriiton of li in a list */
 li:first-of-type {
   color: rgb(152, 27, 8);
 }
 
+/* second apparition of li in a list */
 li:first-of-type + li {
   color: rgb(152, 106, 8);
 }
 
+/* third apparition of li in a list */
+li:first-of-type + li + li{
+  color: rgb(58, 152, 8);
+}
+
+/* combining two selector element.class */
 h4.date{
   font-size: 20px;
 }
