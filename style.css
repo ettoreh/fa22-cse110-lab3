@@ -3,6 +3,13 @@
   src: url("./Silkscreen-Regular.ttf");
 }
 
+@media (max-width: 1250px) and (orientation: landscape) {
+    div {
+        background-color: azure;
+        display: block;
+    }/* … */
+}
+
 body {
     background-color: lightblue;
     margin: 20px;
